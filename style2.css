@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family:courier;
+    background-color:powderblue;
+    font-size:300%;
+}
+h2{
+    text-align:left;
+    font-size:160%;
+    font-family:verdana;
+}
+p{
+    text-align: left;
+    font-size: 130%;
+    
+}
+img{ 
+    size-adjust: 100%;
+    text-align: center;
+
+}
+
+.time{
+    text-align: center;
+
+}   

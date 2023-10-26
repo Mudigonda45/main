@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+  body{
+    background-image: url(pexels-vanessa-loring-7869442.jpg);
+    background-size: cover;
+  }
+</style>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Crafting Web Site </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Levels of crafting<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <div class="new"><li><a href="page.html" target="_blank">Beginning</a></li></div>
+          <div class="new"><li><a href="Intermediate.html" target="_blank">Intermediate</a></li></div>
+          <div class="new"><li><a href="Advanced.html" target="_blank">Advanced</a></li></div>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Printable instructions <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="1. Paper Crafting (Article) Author Tammie Strawser.pdf" target="_blank">Printable instructions (downloadable)</a></li>
+          
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Audio instructions<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="1. Paper Crafting (Article) Author Tammie Strawser.pdf" target="_blank">instructions</a></li>
+          <audio controls>
+            <source src="happy-kids-crafts-theme-puppy-134663.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        </ul>
+      </li>
+
+      
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+<!--   
+<div class="container">
+  <center>
+  <h1> </h1></center>
+  <p>.</p>
+  
+</div> -->
+
+<div class="container">
+  <h2>Contact</h2>
+  <form onsubmit="emailSend(); reset(); return false;">
+    <input type="text" id="Name" placeholder="Name" name="Name" required>
+    <input type="text" id="Phone" placeholder="Phone" name="phone" required>
+    <input type="Email" id="Email" placeholder="Email" name="Email" required>
+    <textarea id="message1" placeholder="Message" name="message1" class="message1" cols="30" rows="10"></textarea>
+    <button type="submit" class="btn">submit</button>
+  </form>
+</div> 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="Contact form to email.js"></script>
+<link rel="stylesheet" href="Contact form to email.css">
+
+</body>
+</html>

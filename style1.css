@@ -1,0 +1,57 @@
+/* style.css */
+.timer {
+    font-size: 36px;
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 150px / auto auto auto;
+    grid-gap: 10px;
+    background-color: #52a7ec;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(241, 229, 229, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  /* styles.css */
+  header {
+      background-color: #9654ec; /* Background color for the header */
+      color: #fff; /* Text color */
+      padding: 20px; /* Padding around the header */
+      text-align: center; /* Center-align the content */
+  }
+  
+  header h1 {
+      font-size: 40px; /* Header text size */
+  }
+  
+  header nav ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  header nav ul li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  header nav ul li a {
+      text-decoration: none;
+      color: #fff; /* Link color */
+  }

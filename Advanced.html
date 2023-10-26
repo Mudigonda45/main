@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <br>
+    <h1>Beginning Crafting challenge</h1>
+    <br>
+
+    <!-- <input type="file" id="imageInput" accept="image/*">
+    <button onclick="uploadImage()">Upload</button>
+    <div id="imagePreview"></div>
+    <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+      </form>
+    <script src="script.js"></script> -->
+    <h2 >Task <i class="bi bi-1-circle-fill"></i>
+    <i class="bi bi-1-circle-fill"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+    </svg>
+  </h2>
+      <p id="demo"></p>
+
+<div class="time">
+  <script>
+    function secondtimer(){
+            var countDownDate = new Date("oct  30, 2023 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo1").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);}
+          </script>
+<script>
+// Set the date we're counting down to
+ var countDownDate1 = new Date("oct  22, 2023 12:32:25").getTime();
+
+// // Update the count down every 1 second
+ var x1 = setInterval(function() {
+
+//   // Get today's date and time
+ var now1 = new Date().getTime();
+    
+//   // Find the distance between now and the count down date
+   var distance1 = countDownDate1 - now1;
+    
+//   // Time calculations for days, hours, minutes and seconds
+   var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+   var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+    
+//   // Output the result in an element with id="demo"
+   document.getElementById("demo").innerHTML = days1 + "d " + hours1 + "h "
+   + minutes1 + "m " + seconds1 + "s ";
+    
+ // If the count down is over, write some text 
+  if (distance1 < 0) {
+    clearInterval(x1);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+    $("#demo1").show();
+    secondtimer();
+
+  }
+}, 1000);
+</script>
+</div>
+    
+    <h3></h3><b>Paper Plate Mask:</b> Make masks using paper plates
+    <div class="inst">
+        <h2 >Instructions : </h2>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+          </ul>
+    </div>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+      
+  
+
+
+    <div id="img">   
+
+      <form action=""></form> 
+    
+    <!-- This is an input element of type file, which allows the user to select an image -->
+    
+    <input type="file"accept="image/*">
+    
+    <!-- This is an image element with an empty src and alt attribute -->
+    
+    <img id="img1"src="" alt="">
+    
+    <!-- This is a script tag, which contains JavaScript code -->
+    
+    <button type="submit" id="submitid" value="Submit">Submit</button>
+    
+    <script>
+    
+    document.getElementById("submitid").addEventListener('click',()=>{let img = document.querySelector("#img1");
+    
+    img.src=null;})
+    
+     // This line declares a variable called "url" and assigns it a value of "Api_Endpoint_Url"
+    
+     let url = "https://script.google.com/macros/s/AKfycbz1EJbyH_NPPyzr5KmCQjO1O-1OYMovo3JdLrFjwgE6r7x50kiQhT2uj9rSdnzG5QVPFA/exec";
+    
+     // This line declares a variable called "file" and assigns it the value of the first input element on the page
+    
+     let file = document.querySelector("input");
+    
+     // This line declares a variable called "img" and assigns it the value of the first image element on the page
+    
+     let img = document.querySelector("img");
+    
+     // This line adds an event listener to the "change" event of the "file" input element
+    
+     file.addEventListener('change',()=>{
+    
+       // This line creates a new FileReader object called "fr"
+    
+       let fr = new FileReader();
+    
+       // This line adds an event listener to the "loadend" event of the FileReader object
+    
+       fr.addEventListener('loadend',()=>{
+    
+         // This line declares a variable called "res" and assigns it the result of the FileReader object
+    
+         let res = fr.result;
+    
+         // This line sets the "src" attribute of the "img" element to the value of "res"
+    
+         img.src=res;
+    
+         // This line splits the "res" variable into an array, using the string "base64," as the separator, and assigns the second element to a variable called "spt"
+    
+         let spt = res.split("base64,")[1];
+    
+         // This line creates an object called "obj" with three properties: "base64", "type", and "name"
+    
+         let obj = {
+    
+           base64:spt,
+    
+           type:file.files[0].type,
+    
+           name:file.files[0].name
+    
+         }
+    
+         // This line sends a POST request to the URL specified in the "url" variable, with the "obj" object as the request body
+    
+         fetch(url,{
+    
+           method:"POST",
+    
+           body:JSON.stringify(obj)
+    
+         })
+    
+         // This line waits for the response from the server and converts it to text
+    
+         .then(r=>r.text())
+    
+         // This line logs the response data to the console
+    
+         .then(data=>console.log(data))
+    
+    
+    
+       })
+    
+       // This line reads the selected file as a data URL
+    
+       fr.readAsDataURL(file.files[0])
+    
+     }) 
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+
+
+</div>
+<hr>
+<!-- crete new task 2 ------------------------------------------------>
+  <div class="demo1">
+    <h2 >Task 2 :</h2>
+    
+      <p id="demo1" style="display: none;"> </p>
+      <!-- <script>
+       
+            document.getElementById("Task2").addEventListener("click",(function(){
+                $("#demo1").show();
+            }));
+        
+        </script> -->
+        <h3></h3><b>Paper Plate Mask:</b> Make masks using paper plates
+        <div class="inst">
+            <h2 >Instructions : </h2>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+              </ul>
+        </div>
+ 
+      
+<div id="img_sec">   
+
+  <form action=""></form> 
+
+<!-- This is an input element of type file, which allows the user to select an image -->
+
+<input id="sec1" type="file" accept="image/*">
+
+<!-- This is an image element with an empty src and alt attribute -->
+
+<img id="img2"src="" alt="">
+
+<!-- This is a script tag, which contains JavaScript code -->
+
+<button type="submit" id="submitid1" value="Submit">Submit</button>
+
+<script>
+
+document.getElementById("submitid1").addEventListener('click',()=>{let img2 = document.querySelector("#img2");
+
+img2.src=null;
+
+})
+
+ // This line declares a variable called "url" and assigns it a value of "Api_Endpoint_Url"
+
+ let url1 = "https://script.google.com/macros/s/AKfycbz1EJbyH_NPPyzr5KmCQjO1O-1OYMovo3JdLrFjwgE6r7x50kiQhT2uj9rSdnzG5QVPFA/exec";
+
+ // This line declares a variable called "file" and assigns it the value of the first input element on the page
+
+ let file1 = document.querySelector("#sec1");
+
+ // This line declares a variable called "img" and assigns it the value of the first image element on the page
+
+ let img1 = document.querySelector("#img2");
+
+ // This line adds an event listener to the "change" event of the "file" input element
+
+ file1.addEventListener('change',()=>{
+
+   // This line creates a new FileReader object called "fr"
+
+   let fr1 = new FileReader();
+
+   // This line adds an event listener to the "loadend" event of the FileReader object
+
+   fr1.addEventListener('loadend',()=>{
+
+     // This line declares a variable called "res" and assigns it the result of the FileReader object
+
+     let res1 = fr1.result;
+
+     // This line sets the "src" attribute of the "img" element to the value of "res"
+
+     img1.src=res1;
+
+     // This line splits the "res" variable into an array, using the string "base64," as the separator, and assigns the second element to a variable called "spt"
+
+     let spt1 = res1.split("base64,")[1];
+
+     // This line creates an object called "obj" with three properties: "base64", "type", and "name"
+
+     let obj1 = {
+
+       base64:spt1,
+
+       type:file1.files[0].type,
+
+       name:file1.files[0].name
+
+     }
+
+     // This line sends a POST request to the URL specified in the "url" variable, with the "obj" object as the request body
+
+     fetch(url1,{
+
+       method:"POST",
+
+       body:JSON.stringify(obj1)
+
+     })
+
+     // This line waits for the response from the server and converts it to text
+
+     .then(r=>r.text())
+
+     // This line logs the response data to the console
+
+     .then(data=>console.log(data))
+
+
+
+   })
+
+   fr1.readAsDataURL(file1.files[0])
+
+ }) 
+
+</script>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+  </div>
+  
+    
+</body>
+</html>

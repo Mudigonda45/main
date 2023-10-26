@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .level {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .task {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Task Tracker</h1></center>
+    <div class="container">
+        <div class="level">
+            <h2>Level 1</h2>
+            <ul id="level1">
+                <!-- Tasks will be added here using JavaScript -->
+            </ul>
+        </div>
+        <div class="level">
+            <h2>Level 2</h2>
+            <ul id="level2">
+                <!-- Tasks will be added here using JavaScript -->
+            </ul>
+        </div>
+        <div class="level">
+            <h2>Level 3</h2>
+            <ul id="level3">
+                <!-- Tasks will be added here using JavaScript -->
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Sample data (tasks and time)
+        const tasks = [
+            { name: 'Task 1', time: '1 hour' },
+            { name: 'Task 2', time: '2 hours' },
+            { name: 'Task 3', time: '30 minutes' },
+        ];
+
+        // Function to add tasks to a level
+        function addTasksToLevel(levelId, taskList) {
+            const ul = document.getElementById(levelId);
+            taskList.forEach((task) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<div class="task">${task.name} <span>${task.time}</span></div>`;
+                ul.appendChild(li);
+            });
+        }
+
+        // Add tasks to levels
+        addTasksToLevel('level1', tasks);
+        addTasksToLevel('level2', tasks);
+        addTasksToLevel('level3', tasks);
+    </script>
+</body>
+</html>
